@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="appium.SampleTestCase" duration-ms="28446" started-at="2016-07-30T14:59:11Z" finished-at="2016-07-30T14:59:40Z">
+  <suite name="appium.SampleTestCase" duration-ms="10445" started-at="2016-07-30T18:00:54Z" finished-at="2016-07-30T18:01:05Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="28446" started-at="2016-07-30T14:59:11Z" finished-at="2016-07-30T14:59:40Z">
+    <test name="Command line test" duration-ms="10445" started-at="2016-07-30T18:00:54Z" finished-at="2016-07-30T18:01:05Z">
       <class name="appium.SampleTestCase">
-        <test-method status="PASS" signature="createAppiumDriver()[pri:0, instance:appium.SampleTestCase@3567135c]" name="createAppiumDriver" is-config="true" duration-ms="7755" started-at="2016-07-30T16:59:11Z" finished-at="2016-07-30T16:59:19Z">
+        <test-method status="PASS" signature="createAppiumDriver()[pri:0, instance:appium.SampleTestCase@15975490]" name="createAppiumDriver" is-config="true" duration-ms="9572" started-at="2016-07-30T20:00:54Z" finished-at="2016-07-30T20:01:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAppiumDriver -->
-        <test-method status="PASS" signature="sampeTest()[pri:0, instance:appium.SampleTestCase@3567135c]" name="sampeTest" duration-ms="18773" started-at="2016-07-30T16:59:19Z" finished-at="2016-07-30T16:59:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sampeTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:appium.SampleTestCase@3567135c]" name="afterTest" is-config="true" duration-ms="1812" started-at="2016-07-30T16:59:38Z" finished-at="2016-07-30T16:59:40Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:appium.SampleTestCase@15975490]" name="afterTest" is-config="true" duration-ms="864" started-at="2016-07-30T20:01:04Z" finished-at="2016-07-30T20:01:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

@@ -4,10 +4,11 @@ import io.appium.java_client.MobileBy;
 
 import java.util.List;
 
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.annotations.Test;
+
  
 public class SampleTestCase extends AppiumDriverBase{
      
