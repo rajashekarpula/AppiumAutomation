@@ -1,4 +1,25 @@
 -------------------------------------------------------------------------------
 Test set: appium.SampleTestCase
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.948 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 53.437 sec <<< FAILURE!
+sampeTest(appium.SampleTestCase)  Time elapsed: 26.6 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Raj-PC', ip: '192.168.98.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.openintents.shopping, testobject_app_id=1, testobject_test_report_url=https://app.testobject.com/#/rajashekarpula/sample-project/appium/executions/8, testobject_suite_name=Default Appium Suite, testobject_device_session_id={value=4834df8d-1fb6-4f9a-b5d8-663200c5f985}, deviceName=008581c08ad541d7, platform=LINUX, deviceUDID=008581c08ad541d7, desired={app=/tmp/apks-LG_Nexus_4_E960_real/org.openintents.shopping.apk, testobject_app_id=1, testobject_test_name=Default Appium Test, testobject_appium_version=1.5.3, testobject_device=LG_Nexus_4_E960_real, testobject_suite_name=Default Appium Suite, testobject_api_key=B16F0B0AEB334DD384FAE69CCFC7C371, platformName=Android, adbPort=15009.0, deviceName=LG_Nexus_4_E960_real}, testobject_appium_version=1.5.3, platformVersion=5.1.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, app=/tmp/apks-LG_Nexus_4_E960_real/org.openintents.shopping.apk, networkConnectionEnabled=true, testobject_test_name=Default Appium Test, warnings={}, testobject_device=LG_Nexus_4_E960_real, appWaitPackage=org.openintents.shopping, appWaitActivity=org.openintents.shopping.ShoppingActivity, databaseEnabled=false, adbPort=15009.0, appActivity=org.openintents.shopping.ShoppingActivity, locationContextEnabled=false, testobject_api_key=B16F0B0AEB334DD384FAE69CCFC7C371, testobject_test_live_view_url=https://app.testobject.com/#/rajashekarpula/sample-project/appium/view/8}]
+Session ID: fb469b16-43d3-41bc-a1a1-075a1041e37c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at appium.SampleTestCase.sampeTest(SampleTestCase.java:19)
+

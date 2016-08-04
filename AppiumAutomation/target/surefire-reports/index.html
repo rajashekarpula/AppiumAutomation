@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-appium.SampleTestCase">
-              <span class="suite-name border-passed">appium.SampleTestCase</span>
+              <span class="suite-name border-failed">appium.SampleTestCase</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-appium.SampleTestCase" class="hide-methods failed suite-appium.SampleTestCase"> (hide)</a> <!-- hide-methods failed suite-appium.SampleTestCase -->
+                      <a href="#" panel-name="suite-appium.SampleTestCase" class="show-methods failed suite-appium.SampleTestCase"> (show)</a> <!-- show-methods failed suite-appium.SampleTestCase -->
+                    </span>
+                    <div class="method-list-content failed suite-appium.SampleTestCase">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-appium.SampleTestCase" title="appium.SampleTestCase" hash-for-method="sampeTest">sampeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-appium.SampleTestCase -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -102,6 +116,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-appium.SampleTestCase" class="panel appium.SampleTestCase">
+          <div class="suite-appium.SampleTestCase-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">appium.SampleTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sampeTest">
+                  </a> <!-- sampeTest -->
+                  <span class="method-name">sampeTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26.17 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;Raj-PC&apos;, ip: &apos;192.168.98.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_77&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=org.openintents.shopping, testobject_app_id=1, testobject_test_report_url=https://app.testobject.com/#/rajashekarpula/sample-project/appium/executions/8, testobject_suite_name=Default Appium Suite, testobject_device_session_id={value=4834df8d-1fb6-4f9a-b5d8-663200c5f985}, deviceName=008581c08ad541d7, platform=LINUX, deviceUDID=008581c08ad541d7, desired={app=/tmp/apks-LG_Nexus_4_E960_real/org.openintents.shopping.apk, testobject_app_id=1, testobject_test_name=Default Appium Test, testobject_appium_version=1.5.3, testobject_device=LG_Nexus_4_E960_real, testobject_suite_name=Default Appium Suite, testobject_api_key=B16F0B0AEB334DD384FAE69CCFC7C371, platformName=Android, adbPort=15009.0, deviceName=LG_Nexus_4_E960_real}, testobject_appium_version=1.5.3, platformVersion=5.1.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, app=/tmp/apks-LG_Nexus_4_E960_real/org.openintents.shopping.apk, networkConnectionEnabled=true, testobject_test_name=Default Appium Test, warnings={}, testobject_device=LG_Nexus_4_E960_real, appWaitPackage=org.openintents.shopping, appWaitActivity=org.openintents.shopping.ShoppingActivity, databaseEnabled=false, adbPort=15009.0, appActivity=org.openintents.shopping.ShoppingActivity, locationContextEnabled=false, testobject_api_key=B16F0B0AEB334DD384FAE69CCFC7C371, testobject_test_live_view_url=https://app.testobject.com/#/rajashekarpula/sample-project/appium/view/8}]
+Session ID: fb469b16-43d3-41bc-a1a1-075a1041e37c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:180)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at appium.SampleTestCase.sampeTest(SampleTestCase.java:19)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-appium.SampleTestCase-class-failed -->
         </div> <!-- panel appium.SampleTestCase -->
         <div panel-name="test-xml-appium.SampleTestCase" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -153,11 +199,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'sampeTest')
+data.setCell(0, 2, 'appium.SampleTestCase')
+data.setCell(0, 3, 26569);
 window.suiteTableData['appium.SampleTestCase']= { tableData: data, tableDiv: 'times-div-appium.SampleTestCase'}
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-appium.SampleTestCase">
               </div> <!-- times-div-appium.SampleTestCase -->
             </div> <!-- times-div -->
@@ -188,9 +239,15 @@ return data;
                 <span class="method-name">createAppiumDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sampeTest</span>
+                <span class="method-start">23043 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">9578 ms</span>
+                <span class="method-start">49637 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
